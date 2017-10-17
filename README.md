@@ -9,8 +9,11 @@ Development
 Project will need **NodeJS** installed.
 
 First steps:
-Create index.html
+
+Create `index.html` file.
+
 Init the project: `npm init`
+
 Install React and ReactDOM:
 
 ````
