@@ -45,7 +45,7 @@ Link React and ReactDOM libraries like this:
 <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
 ````
 
-Add the following code into the scripts section of the `packege.json` for webpack and for run a local server through **http-server**
+Add the following code into the scripts section of the `packege.json` for **webpack** and for run a local server through **http-server**
 
 ````
 build: "webpack",
@@ -72,7 +72,7 @@ stylus:watch": "stylus --watch ./web/assets/style.styl --out ./web/assets/style.
 
 ### Build artifacts
 
-* `npm run buid` Builds aritifacts with Webpack
+* `npm run build` Builds aritifacts with Webpack
 
 ### Technology Stack
 
