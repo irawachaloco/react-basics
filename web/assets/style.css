@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: #639;
+}
+@media (min-width: 414px) {
+  body {
+    font-size: 12px;
+  }
+}
+@media (min-width: 769px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1025px) {
+  body {
+    font-size: 16px;
+  }
+}
+.home-title {
+  opacity: 0.35;
+  display: flex;
+  justify-content: center;
+  font-family: 'Nunito', serif;
+}
+.home-title svg#title {
+  font-size: 7vmax;
+  width: 44vmax;
+  height: 0.7em;
+}
+.bkgd-dark {
+  background-color: #010b12;
+}
