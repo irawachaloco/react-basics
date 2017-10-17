@@ -24,7 +24,7 @@ npm install --save-dev webpack
 ````
 
 ````
-npm install --save-dev httpserver
+npm install --save-dev http-server
 ````
 
 And this:
