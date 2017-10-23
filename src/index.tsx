@@ -14,7 +14,6 @@ const hello2 = new Hello({name:'pancho'});
 
 const main = 
     <div>
-        <Hello name="pancho"/>
         <HeroName name='irawachaloco'/>
     </div>;
 

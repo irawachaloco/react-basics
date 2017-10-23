@@ -85,7 +85,6 @@ var hello = React.createElement(Hello_1.default, { name: "pancho" });
 //aquí lo mismo de arriba sin sintactic-sugar
 var hello2 = new Hello_1.default({ name: 'pancho' });
 var main = React.createElement("div", null,
-    React.createElement(Hello_1.default, { name: "pancho" }),
     React.createElement(heroName_1.default, { name: 'irawachaloco' }));
 ReactDOM.render(main, document.getElementById('root'));
 
@@ -168,15 +167,16 @@ var HeroName = /** @class */ (function (_super) {
     HeroName.prototype.render = function () {
         var name = this.props.name;
         return (React.createElement("div", null,
-            React.createElement("div", { className: "home-title" },
-                React.createElement("svg", { id: 'title' },
-                    React.createElement("linearGradient", { id: "text-colorBkgd", fy: "0", gradientTransform: "rotate(60 .5 .5)" },
-                        React.createElement("stop", { offset: "-20%", stopColor: "#f15361" }),
-                        React.createElement("stop", { offset: "50%", stopColor: "hsl(177, 77%, 68%)" },
-                            React.createElement("animate", { attributeName: "offset", dur: "66000ms", values: "0;1;0", repeatCount: "indefinite" })),
-                        React.createElement("stop", { offset: "100%", stopColor: "hsl(320, 61%, 41%)" })),
-                    React.createElement("text", { x: "0", y: "100", fill: "url(#text-colorBkgd)" }, this.props.name),
-                    "Sorry, your browser does not support inline SVG."))));
+            React.createElement("div", { className: "hero-wrapper" },
+                React.createElement("div", { className: "hero-title" },
+                    React.createElement("svg", { id: 'title' },
+                        React.createElement("linearGradient", { id: "text-colorBkgd", fy: "0", gradientTransform: "rotate(60 .5 .5)" },
+                            React.createElement("stop", { offset: "-20%", stopColor: "#f15361" }),
+                            React.createElement("stop", { offset: "50%", stopColor: "hsl(177, 77%, 68%)" },
+                                React.createElement("animate", { attributeName: "offset", dur: "66000ms", values: "0;1;0", repeatCount: "indefinite" })),
+                            React.createElement("stop", { offset: "100%", stopColor: "hsl(320, 61%, 41%)" })),
+                        React.createElement("text", { x: "0", y: "97%", fill: "url(#text-colorBkgd)" }, this.props.name),
+                        "Sorry, your browser does not support inline SVG.")))));
     };
     return HeroName;
 }(React.Component));

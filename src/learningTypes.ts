@@ -124,7 +124,7 @@ const a3 : A = new C();
 const a4 : A = {
     a: 2
 }
-// Aquí se queja porque namde no está en las propiedades de A, no tiene la forma
+// Aquí se queja porque name no está en las propiedades de A, no tiene la forma
 /* const a5 : A = {
     name: 'pepe'
 } */

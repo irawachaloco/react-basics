@@ -14,16 +14,47 @@ body
     @media (min-width:1025px)
         font-size:16px
 
-.home-title
+removeMargins = 'body, html'
+{removeMargins}
+    margin 0
+    width 100vw
+    height 100vh
+    overflow hidden
+
+vendor(prop, args)
+    -webkit-{prop} args
+    -moz-{prop} args
+    {prop} args
+
+//********************************************
+// Layout
+//********************************************
+
+.flex
+    vendor('display', flex)
+    vendor('display', box)
+    
+.frame
+    width 100%
+    height 100%
+    justify center
+    background-color rgb(8,6,10)
+
+.hero-title
     opacity: .35
     display: flex
     justify-content: center
-    font-family: 'Nunito', serif
+    font-family: 'Nunito', sans-serif
     svg
         &#title
-            font-size: 7vmax
-            width: 44vmax
-            height: .7em
+            width: 50vw
+            max-height: 6.25vw
+            //background-color: #222
+            text
+                font-size: 8.1vmax
+.hero-wrapper
+    overflow: hidden
+    max-height: 4.25vmax
 
 //Colors
 .bkgd-dark
