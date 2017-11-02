@@ -3,6 +3,10 @@
 .AppleDouble
 .LSOverride
 
+# Idea
+.idea
+*.iml
+
 # Generated Artifacts
 /dist
 
