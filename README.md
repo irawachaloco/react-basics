@@ -111,7 +111,7 @@ npm i -D webpack-dev-server html-webpack-plugin
 
 Note: the shortcut `i` is for `install` and `-D` is for `--save-dev`.
 
-We also want to change our build stask to build production ready artifacts, which we'll do by adding an extra parameter to webpack (and we'll move also our webpack configuration to a special folder, as we'll be adding more of them):
+We also want to change our build tasks to build production ready artifacts, which we'll do by adding an extra parameter to webpack (and we'll move also our webpack configuration to a special folder, as we'll be adding more of them):
 
 ```
 "build": "webpack -p --config webpack/conf.js"
@@ -123,7 +123,7 @@ And we'll change our `start` script too, to use the Development Server:
 "start": "webpack-dev-server --config webpack/conf.js",
 ```
 
-No we want to modify our Webpack configuration:
+Now we want to modify our Webpack configuration:
 
 ```javascript
 // We need some utilities from Node:
@@ -133,7 +133,7 @@ const pwd = process.cwd();
 // Plugins
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-// Just writing here chnages resct to previous version
+// Just writing here changes react to previous version
 const config = {
     entry: "./src/index.tsx",
     output: {
