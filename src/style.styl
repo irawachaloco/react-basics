@@ -6,7 +6,7 @@ body
     font-family: 'Roboto', sans-serif
     font-size: 12px
     font-weight: 300
-    color:  rebeccapurple
+    color:  #2d2d2d
     @media (min-width:414px)
         font-size:12px
     @media (min-width:769px)
@@ -33,7 +33,19 @@ vendor(prop, args)
 .flex
     vendor('display', flex)
     vendor('display', box)
-    
+
+section
+    :first-child
+        margin-top: 4em
+
+.content-box
+    max-width 1200px
+    margin: auto
+    position: relative
+
+.small-wrapper
+    max-width: 49vmax
+
 .frame
     width 100%
     height 100%
@@ -55,6 +67,10 @@ vendor(prop, args)
     overflow: hidden
     max-height: 4.25vmax
 
-//Colors
+// Colors
 .bkgd-dark
     background-color: #010B12
+
+// Flex module 
+.flex_center
+    justify-content: center
