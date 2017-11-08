@@ -5,7 +5,7 @@ body
     margin: 0
     font-family: 'Roboto', sans-serif
     font-size: 12px
-    font-weight: 300
+    font-weight: 
     color:  #2d2d2d
     @media (min-width:414px)
         font-size:12px
@@ -36,7 +36,7 @@ vendor(prop, args)
 
 section
     :first-child
-        margin-top: 4em
+        margin-top: 2em
 
 .content-box
     max-width 1200px
@@ -44,7 +44,7 @@ section
     position: relative
 
 .small-wrapper
-    max-width: 49vmax
+    max-width: 30vmax
 
 .frame
     width 100%
@@ -64,8 +64,17 @@ section
             text
                 font-size: 8.1vmax
 .hero-wrapper
-    overflow: hidden
     max-height: 4.25vmax
+    margin-top: 1em
+    position: relative
+    overflow: hidden
+    &:after
+        content: ''
+        position: absolute
+        top: 0
+        height: 100%
+        width: 100%
+        box-shadow: inset 0px -1px 0px 0px rgba(0,0,0,.1) 
 
 // Colors
 .bkgd-dark
