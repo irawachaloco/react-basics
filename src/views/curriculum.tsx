@@ -12,3 +12,5 @@ export const CurriculumVitae = () =>
     </section>;
 
 export default CurriculumVitae;
+
+// Cómo es la manera correcta construir objetos? P.ej. CvContent: description, skills y tools?

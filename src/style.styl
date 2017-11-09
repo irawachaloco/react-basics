@@ -17,9 +17,6 @@ body
 removeMargins = 'body, html'
 {removeMargins}
     margin 0
-    width 100vw
-    height 100vh
-    overflow hidden
 
 vendor(prop, args)
     -webkit-{prop} args
@@ -35,7 +32,7 @@ vendor(prop, args)
     vendor('display', box)
 
 section
-    :first-child
+    &:first-of-type
         margin-top: 2em
 
 .content-box
@@ -45,6 +42,7 @@ section
 
 .small-wrapper
     max-width: 30vmax
+    min-width: 220px
 
 .frame
     width 100%
@@ -60,12 +58,11 @@ section
     svg
         &#title
             width: 50vw
-            max-height: 6.25vw
+            max-height: 8.1vmax
             text
                 font-size: 8.1vmax
 .hero-wrapper
-    max-height: 4.25vmax
-    margin-top: 1em
+    max-height: 6.05vmax
     position: relative
     overflow: hidden
     &:after
@@ -83,3 +80,30 @@ section
 // Flex module 
 .flex_center
     justify-content: center
+
+// Grid
+.grid  
+  display: grid
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr))
+  grid-gap: 20px
+  align-items: stretch
+  
+.grid img 
+  border: 1px solid #ccc
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
+  max-width: 100%
+
+
+// Gallery
+.gallery
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    grid-gap: 20px
+    align-items: stretch
+    .gallery-item
+        /* width: 30vw */
+        min-height: 30vh
+        background-color: silver
+        border: 1px solid purple
+        //box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
+        max-width: 100%
