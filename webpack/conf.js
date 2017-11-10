@@ -28,7 +28,10 @@ const config = {
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" },
 
             // Adding support for stylus
-            { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader'}
+            { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader'},
+            
+            // Adding support for images
+            { test: /\.jpg$/, loader: 'url-loader', options: { limit: 819 }}
         ]
     },
 

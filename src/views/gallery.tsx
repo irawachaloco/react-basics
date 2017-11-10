@@ -1,7 +1,8 @@
 import * as React from 'react';
 
+//const testImage = require('../images/test.jpg');
+
 export const Gallery = () =>
-    // cómo eliminar ese lint de abajo: Exceeds maximum line length of 120
     <section>
         <div className=''>
             <div className='gallery'>

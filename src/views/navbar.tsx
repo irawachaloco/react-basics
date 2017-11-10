@@ -2,16 +2,20 @@ import './navbar.styl';
 
 import * as React from 'react';
 
+import {
+    Link,
+  } from 'react-router-dom';
+
 interface NavBarItemProps {
     caption: string;
     path: string;
 }
 
-const NavBarItem = (props: NavBarItemProps) => <li><a href={props.path}>{props.caption}</a></li>;
+const NavBarItem = (props: NavBarItemProps) => <li><Link to={props.path}>{props.caption}</Link></li>;
 
 export const NavBar = () =>
-<ul className='navbar_list'>
-    <NavBarItem caption='digital' path='/digital'/>
-    <NavBarItem caption='plástica' path='/plastica'/>
-    <NavBarItem caption='cv' path='/cv'/>
-</ul>;
+    <ul className='navbar_list'>
+        <NavBarItem caption='home' path='/'/>
+        <NavBarItem caption='cv' path='/cv'/>
+        <NavBarItem caption='gallery' path='/gallery'/>
+    </ul>;
