@@ -32,8 +32,12 @@ vendor(prop, args)
     vendor('display', box)
 
 section
+    padding: 0 1em
+    box-sizing: border-box
+    @media (min-width:1240px)
+        padding: 0
     &:first-of-type
-        margin-top: 2em
+        margin-top: 3em
 
 .content-box
     max-width 1200px
@@ -98,7 +102,7 @@ section
 .gallery
     display: grid
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
-    grid-gap: 20px
+    grid-gap: 1em
     align-items: stretch
     .gallery-item
         /* width: 30vw */

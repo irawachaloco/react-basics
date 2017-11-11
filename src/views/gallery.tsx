@@ -6,8 +6,11 @@ export const Gallery = () =>
     <section>
         <div className=''>
             <div className='gallery'>
-                <div className='gallery-item'>
-                    <img src={testImage} />
+                <div className='gallery-item'
+                    style={{
+                        backgroundImage: 'url(' + testImage + ')',
+                        backgroundSize: 'cover',
+                    }}>
                 </div>
                 <div className='gallery-item'></div>
                 <div className='gallery-item'></div>
