@@ -12,7 +12,7 @@ import {
 
 const Home = () =>
     <div className='content-box'>
-        hola
+        <section>hola</section>
     </div>;
 
 export const Shell = () =>
