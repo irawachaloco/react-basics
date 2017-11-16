@@ -1,7 +1,10 @@
+import './gallery.styl';
+
 import * as React from 'react';
 
 const testImage = require('../images/test.jpg');
 
+// cerámica
 const img1 = require('../images/ceramic/teteraytaza-min.jpg');
 const img2 = require('../images/ceramic/platosHCH-min.jpg');
 const img3 = require('../images/ceramic/tazasG-min.jpg');
@@ -55,7 +58,6 @@ export const Gallery = () =>
                         backgroundSize: 'cover',
                     }}>
                 </div>
-
             </div>
         </div>
     </section>;

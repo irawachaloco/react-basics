@@ -18,4 +18,5 @@ export const NavBar = () =>
         <NavBarItem caption='home' path='/'/>
         <NavBarItem caption='cv' path='/cv'/>
         <NavBarItem caption='gallery' path='/gallery'/>
+        <NavBarItem caption='gallery2' path='/gallery2'/>
     </ul>;

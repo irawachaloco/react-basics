@@ -1,0 +1,23 @@
+// Gallery
+.gallery
+    display: grid
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+    grid-gap: 1em
+    align-items: stretch
+    .gallery-item
+        /* width: 30vw */
+        min-height: 40vh
+        //background-color: silver
+        //border: 1px solid purple
+        // box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3)
+        max-width: 100%
+        transition: all ease 800ms
+        background-size: contain
+        @media (min-width: 640px)
+            filter: saturate(20%) opacity(80%)
+            background-size: 100%
+            &:hover
+                background-size: 60%
+                box-shadow: none
+                filter: none
+            

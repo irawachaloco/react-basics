@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import { CurriculumVitae } from './curriculum';
 import { Gallery } from './gallery';
+import { Gallery2 } from './gallery2';
 import { NavBar } from './navbar';
 import SiteName from './site_name';
 
@@ -23,5 +24,6 @@ export const Shell = () =>
             <Route exact path='/' component={ Home } />
             <Route path='/cv' component={ CurriculumVitae } />
             <Route path='/gallery' component={ Gallery } />
+            <Route path='/gallery2' component={ Gallery2 } />
         </div>
     </Router>;
