@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { Carousel } from './carousel';
+import { CarouselTest } from './carousel_test';
 import { CurriculumVitae } from './curriculum';
 import { Gallery } from './gallery';
 import { Gallery2 } from './gallery2';
@@ -26,6 +26,6 @@ export const Shell = () =>
             <Route path='/cv' component={ CurriculumVitae } />
             <Route path='/gallery' component={ Gallery } />
             <Route path='/gallery2' component={ Gallery2 } />
-            <Route path='/carousel' component={Carousel } />
+            <Route path='/carousel_test' component={CarouselTest } />
         </div>
     </Router>;
