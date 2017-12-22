@@ -1,8 +1,8 @@
+import * as React from 'react';
+
 import './gallery.styl';
 
 import { ceramic } from '../data/ceramic/ceramic';
-
-import * as React from 'react';
 
 interface GalleryItemProps {
     path: string;

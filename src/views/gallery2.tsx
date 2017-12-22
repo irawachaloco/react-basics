@@ -6,8 +6,6 @@ import * as React from 'react';
 
 const testImage = require('../images/test.jpg');
 
-
-
 // pintura / serie
 // juguetes_patologicos
 // cómo ordenar 'bloques' como series
